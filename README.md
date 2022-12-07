@@ -1,6 +1,6 @@
 # CHAPTER 03
 **SELF ASSESSMENT**
- - Cách đặt tên class còn dài dòng và dễ nhầm lẫn 
+ - Cách đặt tên class còn dài dòng, lộn xộn và dễ nhầm lẫn 
  - Code vẫn còn chưa thuần thục theo chuẩn BEM và FLOCSS
  - Cách bố trí code css còn lộn xộn chưa theo thứ tự các block từ trên xuống
  - Cách sử dụng và bố trí css vào file (theo component, theo layout) chưa tối ưu vẫn còn rất lộn xộn
