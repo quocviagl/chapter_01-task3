@@ -1,44 +1,51 @@
-<%- include('_layouts/layout', { title: 'Home page' }); -%>
+<%- include('_layouts/layout', { title: 'MENTHA OIL' }); -%>
 
-<!-- @meta -->
-<meta name="description" content="Home page">
-<!-- @@meta -->
+<meta name="description" content="Main page" />
 
 <!-- @content -->
-<main class="p-top">
+<!-- LEAF SECTION -->
+<img
+  src="./_public/assets/img/topleaf.png"
+  alt="Top leaf"
+  class="c-leaf__topleaf"
+/>
+<img
+  src="./_public/assets/img/sideleaf.png"
+  alt="Side leaf"
+  class="c-leaf__sideleaf"
+/>
+<main class="l-maincontent">
+<!-- MAINVISUAL SECTION -->
   <section class="c-mainvisual">
     <div class="c-mainvisual__inner">
-      <h2>LOREM IPSUM</h2>
-      <p>In volutpat metus quis velit malesuada</p>
-      <a href="<%= BASE_URL %>about.html" class="c-btn1">JOIN NOW</a>
+      <div class="c-mainvisual__content">
+        <h1 class="c-mainvisual__title">
+          <img
+            src="./_public/assets/img/mainvisual_title.png"
+            alt="健栄製薬の ハッカ油  "
+          />
+        </h1>
+        <p class="c-mainvisual__text">
+          ハッカ油は、毎日の暮らしを豊かにする
+          <strong class="c-mainvisual__text--strong">魔法のしずく</strong>
+        </p>
+        <a class="c-mainvisual__btn"
+          >ハッカ<span class="c-mainvisual__text--fixspacing1"> ？</span
+          ><span class="c-mainvisual__text--fixspacing2">ミント？</span>
+        </a>
+      </div>
     </div>
   </section>
-
-  <section class="p-top1">
-    <div class="l-container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-      </p>
+<!-- PRODUCT SECTION -->
+  <section class="c-product">
+    <h1 class="c-product__title">
+      <span class="c-product__title--small">使い方いろいろ </span><br>
+       毎日にハッカ油
+    </h1>
+    <div class="c-product__item">
+      <img src="./_public/assets/img/product/spray.png" alt="ハッカ水" class="c-product__img">
+      <div class="c-product__name">ハッカ水</div>
     </div>
   </section>
 </main>
 <!-- @@content -->
-
-<!-- @script -->
-<script>
-  console.log("home page");
-</script>
-<!-- @@script -->

@@ -1,0 +1,98 @@
+//MAINVISUAL SECTION
+.c-mainvisual {
+    background-color: #fff;
+    position: relative;
+    padding-top: 100px;
+    width: 100%;
+
+    .c-mainvisual__inner {
+        background: url(../../_public/assets/img/bg_main.png) no-repeat;
+        background-position: bottom;
+        max-width: 112rem;
+        margin: 0 auto;
+        padding: 100px 0 60px 173px;
+        border-radius: 60px;
+        background-size: cover;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: "";
+            background: url("../../_public/assets/img/bubble.png") no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 611px;
+            transform: translate(-48.5%, -42.5%);
+            transform: translate(-48.5%, -42.5%);
+            background-position: center;
+            pointer-events: none;
+        }
+        
+    }
+
+    .c-mainvisual__content {
+        width: fit-content;
+        text-align: center;
+
+        .c-mainvisual__title {
+            font-family: "kozuka-gothic-pr6n", sans-serif;
+            font-size: 3.75rem;
+            font-weight: 900;
+        }
+    
+        .c-mainvisual__text {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            margin-top: 33px;
+            letter-spacing: 1.6px;
+            font-weight: 400;
+        }
+    
+        .c-mainvisual__text--strong {
+            display: block;
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            margin-top: 10px;
+        }
+
+        .c-mainvisual__text--fixspacing1 {
+            letter-spacing: 1.95px;
+            margin-left: -6px;
+        
+        }
+
+        .c-mainvisual__text--fixspacing2 {
+            letter-spacing: 6.9px;
+            margin-left: -6px;
+        
+        }
+
+        .c-mainvisual__btn {
+            display: block;
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: #fff;
+            background-color: #25a989;
+            border-radius: 27.5px;
+            margin-top: 31px;
+            letter-spacing: 6px;
+            width: fit-content;
+            margin-left: 8px;
+            margin-right: -8px;
+            padding: 25px 31px 24px 38px;
+            line-height: 5px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+    }
+
+
+        
+}

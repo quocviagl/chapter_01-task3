@@ -1,0 +1,30 @@
+.c-nav__menu {
+    margin-top: -1px;
+    left: 20px;
+    z-index: 9999;
+    
+    .c-nav__item {
+        height: 40px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        background-image: url("../../_public/assets/img/bg_menuitem.png");
+        padding: 9px 33px 0 20px;
+        letter-spacing: 2px;
+        color: #fff;
+    }
+    
+    .c-nav__item:not(:last-child) {
+        margin-bottom: 14px;
+    }
+    
+    .c-nav__item:nth-child(2) {
+        margin-bottom: 16px;
+        letter-spacing: 1.6px;
+    }
+    
+    .c-nav__item:nth-child(4) {
+        margin-bottom: 16px;
+        padding-top: 7px;
+    }
+}
+
