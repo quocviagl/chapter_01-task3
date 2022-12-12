@@ -2,8 +2,23 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-    padding: 20px;
-    background: #051a2b;
-    color: #fff;
-    text-align: center;
+    width: 100%;
+    background-color: #fff;
+
+    .c-footer__content {
+        width: 1120px;
+        height: 90px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-footer__text {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    .c-footer__logo {
+        text-align: right;
+    }
 }

@@ -1,0 +1,28 @@
+.c-feature {
+    width: 100%;
+
+    .c-feature__content {
+        max-width: 112rem;
+        color: #333;
+        margin: 0 auto;
+
+        .c-feature__title {
+            font-size: 4.5rem;
+            font-weight: 400;
+            height: 250px;
+
+            text-align: center;
+            background: url("/assets/img/feature_banner.png") no-repeat;
+            background-position: bottom;
+        }
+        
+        .c-feature__title--small {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        .c-feature__item {
+            border-bottom: 1px solid #176b6a;
+        }
+    }
+}

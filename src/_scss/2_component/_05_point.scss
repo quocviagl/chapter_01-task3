@@ -1,0 +1,82 @@
+.c-point {
+    width: 100%;
+    background-color: #f5f4ed;
+
+    .c-point__content {
+        width: 1120px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .c-point__top {
+        display: flex;
+        gap: 30px;
+
+        .c-point__top--left {
+            text-align: center;
+        }
+
+        .c-point__top--right {
+            max-width: 420px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 16px 4px 10px 1px;
+            text-align: left;
+        }
+
+        .c-point__number {
+            font-size: 7rem;
+            font-weight: 400;
+            font-family: "Honoka Mincho";
+            text-align: center;
+
+        }
+
+        .c-point__text {
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            font-weight: 400;
+            position: relative;
+
+            &::before {
+                content: "";
+                background: #000;
+                position: absolute;
+                top: 0;
+                left: 20%;
+                right: 20%;
+                height: 1px;
+            }
+        }
+
+        .c-point__hastag {
+            font-size: 5rem;
+            font-weight: 400;
+            font-family: "Sawarabi Mincho";
+        }
+
+        .c-point__title {
+            font-size: 3.6rem;
+            font-weight: 400;
+            color: #176b6a;
+            letter-spacing: 3.7px;
+            margin-left: -2px;
+            margin-bottom: 13px;
+            
+        }
+
+        .c-point__description {
+            letter-spacing: 1.3px;
+            line-height: 26px;
+
+        }
+
+        .c-point__description--fixspacing {
+            letter-spacing: 1.5px;
+        }
+    }
+
+}

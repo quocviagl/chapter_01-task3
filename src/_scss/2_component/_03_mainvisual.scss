@@ -6,7 +6,7 @@
     width: 100%;
 
     .c-mainvisual__inner {
-        background: url(../../_public/assets/img/bg_main.png) no-repeat;
+        background: url("/assets/img/bg_main.png") no-repeat;
         background-position: bottom;
         max-width: 112rem;
         margin: 0 auto;
@@ -19,7 +19,7 @@
             top: 50%;
             left: 50%;
             content: "";
-            background: url("../../_public/assets/img/bubble.png") no-repeat;
+            background: url("/assets/img/bubble.png") no-repeat;
             background-size: contain;
             width: 100%;
             height: 611px;

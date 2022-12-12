@@ -1,0 +1,49 @@
+.c-qa {
+    width: 100%;
+
+    .c-qa__content {
+        width: 1120px;
+        margin: 0 auto;
+
+
+        .c-qa__title {
+            color: #176b6a;
+            font-size: 3.6rem;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .c-qa__question {
+            color: #176b6a;       
+        }
+
+        .c-qa__answer {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        .c-qa__Qmark {
+            position: relative;
+            color: #333;
+            font-size: 2.6rem;
+            font-weight: 400;
+            z-index: 100;
+                        
+            &::after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                content: "";
+                background: url("/assets/img/Qmark_bg.png") no-repeat;
+                background-size: contain;
+                width: 50px;
+                height: 50px;
+                transform: translate(-50%, -50%);
+                background-position: center;
+                pointer-events: none;
+                z-index: -1;
+            }
+        }
+    }
+}
+
