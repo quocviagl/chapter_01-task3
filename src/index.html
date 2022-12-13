@@ -1,29 +1,33 @@
-<%- include('_layouts/layout', { title: 'MENTHA OIL' }); -%>
-
+<%- include('_layouts/layout', { title: 'Mentha Oil' }); -%>
+<!-- @meta -->
 <meta name="description" content="Main page" >
+<!-- @@meta -->
 
 <!-- @content -->
 <!-- LEAF SECTION -->
-<img
+<div class="c-leaf">
+
+  <img
   src="/assets/img/topleaf.png"
   alt="Top leaf"
   class="c-leaf__topleaf"
->
-<img
+  >
+  <img
   src="/assets/img/sideleaf.png"
   alt="Side leaf"
   class="c-leaf__sideleaf"
->
+  >
+</div>
 <main class="l-maincontent">
   <!-- MAINVISUAL SECTION -->
-  <section class="c-mainvisual">
+  <section id="c-mainvisual">
     <div class="c-mainvisual__inner">
       <div class="c-mainvisual__content">
         <h1 class="c-mainvisual__title">
           <img
             src="/assets/img/mainvisual_title.png"
             alt="健栄製薬の ハッカ油  "
-          />
+          >
         </h1>
         <p class="c-mainvisual__text">
           ハッカ油は、毎日の暮らしを豊かにする
@@ -37,9 +41,9 @@
     </div>
   </section>
   <!-- PRODUCT SECTION -->
-  <section class="c-product">
+  <section id="c-product">
     <h1 class="c-product__title">
-      <span class="c-product__title--small">使い方いろいろ </span><br />
+      <span class="c-product__title--small">使い方いろいろ </span><br>
       毎日にハッカ油
     </h1>
     <div class="c-product__list">
@@ -48,69 +52,69 @@
           src="/assets/img/product/bottle.png"
           alt="ハッカ水"
           class="c-product__img"
-        />
+        >
         <div class="c-product__name">ハッカ水</div>
       </div>
       <div class="c-product__item">
         <img
           src="/assets/img/product/spray.png"
-          alt="ハッカ水"
+          alt="ハッカの虫除けスプレー"
           class="c-product__img"
-        />
-        <div class="c-product__name">ハッカ水</div>
+        >
+        <div class="c-product__name">ハッカの虫除けスプレー</div>
       </div>
       <div class="c-product__item">
         <img
           src="/assets/img/product/iron.png"
-          alt="ハッカ水"
+          alt="ハッカのリネンウォーター"
           class="c-product__img"
-        />
-        <div class="c-product__name">ハッカ水</div>
+        >
+        <div class="c-product__name">ハッカのリネンウォーター</div>
       </div>
       <div class="c-product__item">
         <img
           src="/assets/img/product/smaill_spray.png"
-          alt="ハッカ水"
+          alt="ハッカのエアフレッシュナー"
           class="c-product__img"
-        />
-        <div class="c-product__name">ハッカ水</div>
+        >
+        <div class="c-product__name">ハッカのエアフレッシュナー</div>
       </div>
       <div class="c-product__item">
         <img
           src="/assets/img/product/light.png"
-          alt="ハッカ水"
+          alt="ハッカの清涼スプレー"
           class="c-product__img"
-        />
-        <div class="c-product__name">ハッカ水</div>
+        >
+        <div class="c-product__name">ハッカの清涼スプレー</div>
       </div>
       <div class="c-product__item">
         <img
           src="/assets/img/product/mask.png"
-          alt="ハッカ水"
+          alt="ハッカマスク"
           class="c-product__img"
-        />
-        <div class="c-product__name">ハッカ水</div>
+        >
+        <div class="c-product__name">ハッカマスク</div>
       </div>
       <div class="c-product__item">
         <img
           src="/assets/img/product/pillow.png"
-          alt="ハッカ水"
+          alt="ハッカで安息"
           class="c-product__img"
-        />
-        <div class="c-product__name">ハッカ水</div>
+        >
+        <div class="c-product__name">ハッカで安息</div>
       </div>
       <div class="c-product__item">
         <img
           src="/assets/img/product/bathtub.png"
-          alt="ハッカ水"
+          alt="ハッカの入浴剤"
           class="c-product__img"
-        />
-        <div class="c-product__name">ハッカ水</div>
+        >
+        <div class="c-product__name">ハッカの入浴剤</div>
       </div>
     </div>
   </section>
   <!-- POINT SECTION -->
-  <section class="c-point">
+  <section id="c-point">
     <div class="c-point__content">
     <% if (typeof linklists != 'undefined')  { %>
       <% pointdata.point && pointdata.point.forEach(data => { %>
@@ -120,24 +124,25 @@
             <div class="c-point__text"><%= data.text %></div>
           </div>
           <div class="c-point__top--right">
-          <div class="c-point__title"><%= data.title %></div>
-          <div class="c-point__description"><%= data.description1 %> <p class="c-point__description--fixspacing"><%= data.description2%></p></div>
+          <h2 class="c-point__title"><%= data.title %></h2>
+          <div class="c-point__description"><%= data.description1 %> 
+            <p class="c-point__description--fixspacing"><%= data.description2%></p>
+          </div>
           </div>
         </div>
         <div class="c-point__bottom">
           <div class="c-point__list">
-            <div class="c-point__more"></div>
-            <div class="c-point__item">
-              <div class="c-item__imgs">
-                  <img src="<%=data.item_img1 %>" alt="<%=data.item_title %>" class="c-item__img">
-                  <img src="<%=data.item_img2 %>" alt="<%=data.item_title %>" class="c-item__img">
-                  <img src="<%=data.item_img3 %>" alt="<%=data.item_title %>" class="c-item__img">
+            <% data.img && data.img.forEach(img => { %>
+              <div class="c-point__item">
+                <img src="<%=img.url %>" alt="<%=data.item_title %>" class="c-item__img">
+                <div class="c-item__content">
+                  <span class="c-point__more">More</span>
+                  <div class="c-item__title"><%=data.item_title %></div>
+                  <div class="c-item__description"><%=data.item_description %></div>
+                  <a href="#" class="c-item__btn"><%=data.button%></a>
+                </div>
               </div>
-
-              <div class="c-item__title"></div>
-              <div class="c-item__description"></div>
-              <div class="c-item__btn"></div>
-            </div>
+              <% }) %>  
           </div>
         </div>
       <% }) %>
@@ -145,40 +150,43 @@
   </div>
   </section>
   <!-- PARTNER SECTION -->
-  <section class="c-partner"> 
+  <section id="c-partner"> 
     <div class="c-partner__content">
     <% if (typeof partnerdata != 'undefined')  { %>
-      <div class="c-partner__title"></div>
+      <div class="c-partner__title"><%=partnerdata.title %></div>
       <div class="c-partner__list">
-        <div class="c-partner__item">
-          <% partnerdata.partners.forEach(partner => { %>
-            <img src="<%=partner.url %>" alt="" class="c-partner__img">
-          <% })%>
-        </div>
-        <div class="c-partner__name"><%=partnerdata.name %></div>
+        <% partnerdata.partners.forEach(partner => { %>
+          <a class="c-partner__item">
+              <img src="<%=partner.url %>" alt="" class="c-partner__img">
+              <span class="c-partner__rightangle"></span>
+          </a>
+        <% })%>
       </div>
+      <h2 class="c-partner__name"><%=partnerdata.name %></h2>
     <% } %>
     </div>
   </section>
   <!-- Q&A SECTION -->
-  <section class="c-qa">
+  <section id="c-qa">
     <div class="c-qa__content">
       <h2 class="c-qa__title">Q&A</h2>
-      <% if (typeof QAdata != 'undefined')  { %>
-        <% QAdata.data && QAdata.data.forEach(data => { %>
-          <dl class="c-qa__questionlist">
-            <dt class="c-qa__question">
-              <span class="c-qa__Qmark">Q</span>
+      <div class="c-questionlist">
+        <% if (typeof QAdata != 'undefined')  { %>
+          <% QAdata.data && QAdata.data.forEach(data => { %>
+            <dl class="c-qa__questionitem">
+              <dt class="c-qa__question">
+              <span class="c-qa__qmark">Q</span>
               <%=data.question %>
-            </dt>
-            <dd class="c-qa__answer"><%=data.answer%></dd>
+              </dt>
+              <dd class="c-qa__answer"><%=data.answer%></dd>
           </dl>
-        <% }) %>
-      <% } %>
+          <% }) %>
+          <% } %>
+        </div>
     </div>
   </section>
   <!-- FEATURE SECTION -->
-  <section class="c-feature">
+  <section id="c-feature">
     <div class="c-feature__content">
       <h2 class="c-feature__title"><span class="c-feature__title--small">日々の暮らしにお役立ち <br></span>「ハッカ油コラム」へ </h2>
       <% if (typeof QAdata != 'undefined')  { %>
@@ -206,7 +214,6 @@
     </div>
 
   </section>
-  <!-- BANNER SECTION -->
-  <div class="c-footerbanner"><img src="/assets/img/footer_banner.png" alt="Footer Banner"></div>
+
 </main>
 <!-- @@content -->

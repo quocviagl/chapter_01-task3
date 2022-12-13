@@ -1,10 +1,48 @@
-.c-partner {
+#c-partner {
     background-color: #f5f4ed;
     width: 100%;
 
     .c-partner__content {
-        width: 1120px;
+        max-width: 112rem;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .c-partner__title {
+        font-size: 3rem;
+        font-weight: 400;
+        color: #176b6a;
+        letter-spacing: 3px;
+        padding-top: 104px;
+        padding-bottom: 42px;
+    }
+
+    .c-partner__list {
+        display: flex;
+        column-gap: 17px;
+        margin-left: 10px;
+        margin-top: -1px;
+        padding-bottom: 47px;
+
+        .c-partner__item {
+            display: block;
+            width: calc((100% - 60px) /4);
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .c-partner__img {
+            border-radius: 20px;
+
+        }
+        
+    }
+
+    .c-partner__name {
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        padding-bottom: 106px;
     }
 }

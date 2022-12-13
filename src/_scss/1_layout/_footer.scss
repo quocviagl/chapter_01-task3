@@ -1,24 +1,51 @@
-/*------------------------------------------------------------
-footer
-------------------------------------------------------------*/
-.c-footer {
+#c-footer {
     width: 100%;
     background-color: #fff;
+    margin: 0 auto;
+    padding-top: 98px;
 
+    .c-footer__banner {
+        max-width: 112rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 66px;
+    }
+    
     .c-footer__content {
-        width: 1120px;
-        height: 90px;
+        max-width: 112rem;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        padding: 47px;
     }
 
     .c-footer__text {
         font-size: 1.4rem;
         font-weight: 400;
+        line-height: 1.7;
+        letter-spacing: 1px;
+    }
+
+    .c-footer__phonenumber {
+        letter-spacing: 2px;
+    }
+
+    .c-footer__worktime {
+        letter-spacing: 1.5px;
     }
 
     .c-footer__logo {
         text-align: right;
+        padding-top: 4px;
+        padding-bottom: 8px;
+        margin-right: -1px;
     }
+
+    .c-footer__copyright {
+        color: #282828;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 1.3px;
+    }
+    
 }

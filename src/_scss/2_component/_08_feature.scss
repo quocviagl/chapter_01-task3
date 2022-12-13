@@ -1,5 +1,6 @@
-.c-feature {
+#c-feature {
     width: 100%;
+    padding-top: 44px;
 
     .c-feature__content {
         max-width: 112rem;
@@ -10,19 +11,94 @@
             font-size: 4.5rem;
             font-weight: 400;
             height: 250px;
-
             text-align: center;
             background: url("/assets/img/feature_banner.png") no-repeat;
             background-position: bottom;
+            line-height: 1.1;
+            padding: 67px;
+            letter-spacing: 4.6px;
+            
         }
         
         .c-feature__title--small {
             font-size: 2rem;
             font-weight: 400;
+            margin-left: -16px;
+            letter-spacing: 0;
+        }
+
+        .c-feature__list {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 0 0 70px;
+            
         }
 
         .c-feature__item {
             border-bottom: 1px solid #176b6a;
+            width: 92.5%;
+
+            &:not(:last-child) {
+                margin-bottom: 33px;
+            }
+        }
+
+        .c-item__top {
+            display: flex;
+            column-gap: 15px;
+            padding-bottom: 21px;
+            
+        }
+
+        .c-item__top--left {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .c-item__top--right {
+            padding-top: 22px;
+
+        }
+
+        .c-item__title {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #333;
+            letter-spacing: 2.5px;
+            line-height: 1.5;
+        }
+
+        .c-item__title--small {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #333;
+            letter-spacing: 1.5px;
+
+        }
+
+        .c-item__img {
+            border-radius: 10px;
+        }
+
+        .c-item__number {
+            position: absolute;
+            left: 23.3%;
+            bottom: -1%;
+            font-size: 4.6rem;
+            font-weight: 400;
+            color: #176b6a;
+            letter-spacing: 4px;
+        }
+
+        .c-item__description {
+            width: 820px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #333;
+            letter-spacing: 1.4px;
+            position: relative;
+            padding-bottom: 32px;
         }
     }
 }

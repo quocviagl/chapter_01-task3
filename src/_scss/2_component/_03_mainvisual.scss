@@ -1,5 +1,5 @@
 //MAINVISUAL SECTION
-.c-mainvisual {
+#c-mainvisual {
     background-color: #fff;
     position: relative;
     padding-top: 100px;
@@ -24,7 +24,6 @@
             width: 100%;
             height: 611px;
             transform: translate(-48.5%, -42.5%);
-            transform: translate(-48.5%, -42.5%);
             background-position: center;
             pointer-events: none;
         }
@@ -39,6 +38,7 @@
             font-family: "kozuka-gothic-pr6n", sans-serif;
             font-size: 3.75rem;
             font-weight: 900;
+            margin-left: -2px;
         }
     
         .c-mainvisual__text {
@@ -76,13 +76,13 @@
             color: #fff;
             background-color: #25a989;
             border-radius: 27.5px;
-            margin-top: 31px;
+            margin-top: 30px;
             letter-spacing: 6px;
             width: fit-content;
             margin-left: 8px;
             margin-right: -8px;
-            padding: 25px 31px 24px 38px;
-            line-height: 5px;
+            padding: 25px 30px 25px 38px;
+            line-height: 0.2;
             cursor: pointer;
             transition: opacity 0.3s;
 

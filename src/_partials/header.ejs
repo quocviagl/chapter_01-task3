@@ -5,7 +5,7 @@
         <ul class="c-nav__menu">
         <% linklists.main && linklists.main.forEach(link => { %>
             <li class="c-nav__item">
-              <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+              <a <% if (link.current || link.active) %> href="<%= link.url %>"><%= link.title %></a>
             </li>
             <% }) %>
         </ul>
