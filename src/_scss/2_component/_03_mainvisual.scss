@@ -3,6 +3,7 @@
     background-color: #fff;
     position: relative;
     padding-top: 100px;
+    padding: 100px 20px 0;
     width: 100%;
 
     .c-mainvisual__inner {
@@ -14,19 +15,6 @@
         border-radius: 60px;
         background-size: cover;
 
-        &::before {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            content: "";
-            background: url("/assets/img/bubble.png") no-repeat;
-            background-size: contain;
-            width: 100%;
-            height: 611px;
-            transform: translate(-48.5%, -42.5%);
-            background-position: center;
-            pointer-events: none;
-        }
         
     }
 
@@ -35,7 +23,6 @@
         text-align: center;
 
         .c-mainvisual__title {
-            font-family: "kozuka-gothic-pr6n", sans-serif;
             font-size: 3.75rem;
             font-weight: 900;
             margin-left: -2px;
@@ -47,6 +34,7 @@
             margin-top: 33px;
             letter-spacing: 1.6px;
             font-weight: 400;
+            color: #000;
         }
     
         .c-mainvisual__text--strong {
@@ -55,6 +43,7 @@
             font-weight: 400;
             letter-spacing: 3px;
             margin-top: 10px;
+            color: #000;
         }
 
         .c-mainvisual__text--fixspacing1 {

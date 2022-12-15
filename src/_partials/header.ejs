@@ -1,15 +1,27 @@
 <header class="c-header">
   <nav class="c-header__nav">
-
       <% if (typeof linklists != 'undefined') { %>
         <ul class="c-nav__menu">
         <% linklists.main && linklists.main.forEach(link => { %>
             <li class="c-nav__item">
-              <a <% if (link.current || link.active) %> href="<%= link.url %>"><%= link.title %></a>
+              <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
             </li>
             <% }) %>
         </ul>
       <% } %>
-
   </nav>
+  <nav class="c-header__spnav ">
+    <img src="./assets/img/sp/menu-icon-white.png" alt="menu-icon" class="c-header__menuiconwhite">
+    <img src="./assets/img/sp/leaf/topleaf.png" class="c-spnav__leaftop" alt="ハッカ油">
+    <img src="./assets/img/sp/leaf/rightleaf.png" class="c-spnav__leafright" alt="ハッカ油">
+    <% if (typeof linklists != 'undefined') { %>
+      <ul class="c-spnav__menu">
+      <% linklists.main && linklists.main.forEach(link => { %>
+          <li class="c-spnav__item">
+            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+          </li>
+          <% }) %>
+      </ul>
+    <% } %>
+</nav>
 </header>

@@ -1,74 +1,73 @@
 #c-qa {
     width: 100%;
-
-    .c-qa__content {
-        max-width: 1000px;
-        margin: 0 auto;
-
-
-        .c-qa__title {
-            color: #176b6a;
-            font-size: 3.6rem;
-            font-weight: 400;
-            text-align: center;
-            letter-spacing: 4px;
-            padding-top: 78px;
-        
-        }
-
-        .c-questionlist {
-            padding: 48px 65px 63px 88px;
-        }
-
-        .c-qa__questionitem {
-            &:not(:last-child) {
-                padding-bottom: 52px;
-            }
-        }
-
-        .c-qa__question {
-            color: #176b6a;
-            font-size: 1.4rem;
-            font-weight: 400;
-            letter-spacing: 1.3px;
-            margin: -1px 0 0 -2p;
-
-        }
-
-        .c-qa__answer {
-            font-size: 1.4rem;
-            font-weight: 400;
-            color: #333;
-            padding-top: 16px;
-            letter-spacing: 1.43px;
-            margin-left: -19px;
-            margin-right: 10px;
-        }
-
-        .c-qa__qmark {
-            position: relative;
-            color: #333;
-            font-size: 2.6rem;
-            font-weight: 400;
-            z-index: 100;
-            margin-right: 30px;
-
-            &::after {
-                position: absolute;
-                top: 58%;
-                left: 54%;
-                content: "";
-                background: url("/assets/img/Qmark_bg.png") no-repeat;
-                background-size: contain;
-                width: 68px;
-                height: 55px;
-                transform: translate(-50%, -50%);
-                background-position: center;
-                pointer-events: none;
-                z-index: -1;
-            }
-        }
-
-    }
 }
 
+.c-qa__content {
+    max-width: 1000px;
+    margin: 0 auto;
+
+
+    .c-qa__title {
+        color: #176b6a;
+        font-size: 3.6rem;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 4px;
+        padding-top: 78px;
+        
+    }
+
+    .c-questionlist {
+        padding: 48px 65px 63px 88px;
+    }
+
+    .c-qa__questionitem {
+        &:not(:last-child) {
+            padding-bottom: 52px;
+        }
+    }
+
+    .c-qa__question {
+        color: #176b6a;
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 1.3px;
+        margin: -1px 0 0 -2p;
+
+    }
+
+    .c-qa__answer {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #333;
+        padding-top: 16px;
+        letter-spacing: 1.43px;
+        margin-left: -19px;
+        margin-right: 10px;
+    }
+
+    .c-qa__qmark {
+        position: relative;
+        color: #333;
+        font-size: 2.6rem;
+        font-weight: 400;
+        z-index: 100;
+        margin-right: 30px;
+
+        &::after {
+            position: absolute;
+            top: 58%;
+            left: 54%;
+            content: "";
+            background: url("/assets/img/Qmark_bg.png") no-repeat;
+            background-size: contain;
+            width: 68px;
+            height: 55px;
+            transform: translate(-50%, -50%);
+            background-position: center;
+            pointer-events: none;
+            z-index: -1;
+        }
+    }
+
+}

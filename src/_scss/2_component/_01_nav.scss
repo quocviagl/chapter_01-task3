@@ -1,8 +1,10 @@
 .c-nav__menu {
     margin-top: -1px;
-    left: 20px;
+    left: 0;
+    top: 67px;
     z-index: 9999;
-    
+    position: fixed;
+
     .c-nav__item {
         height: 40px;
         font-size: 1.6rem;
@@ -12,6 +14,7 @@
         letter-spacing: 2px;
         color: #fff;
         transition: opacity 0.3s;
+   
 
         &:hover {
             opacity: 0.7;
@@ -32,5 +35,59 @@
         margin-bottom: 16px;
         padding-top: 7px;
     }
+
+    .is-active {
+        opacity: 0.7;
+    }
+    @include sp {
+        display: none;
+    }
 }
 
+.c-header__spnav {
+    position: fixed;
+
+    .c-spnav__menu {
+        text-align: center;
+        
+    }
+
+    .c-spnav__item {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #fff;
+        font-size: 2rem;
+        line-height: 4;
+        letter-spacing: 1.8px;
+        border-bottom: 1px solid #3a5656;
+    }
+
+    .c-spnav__leaftop {
+        width: 160px;
+        position: absolute;
+        top: -8.5%;
+        left: 0;
+    }
+
+    .c-spnav__leafright {
+        width: 180px;
+        position: absolute;
+        top: 40.5%;
+        right: 0;
+    }
+
+    .c-header__menuiconwhite {
+        width: 45px;
+        
+    }
+
+}
+
+.is-show {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: url("assets/img/sp/background.jpg") repeat;
+    z-index: 10000;
+}

@@ -14,5 +14,13 @@ body {
 
     .l-maincontent {
         background: #fff;
+        max-width: 100%;
+    }
+
+    .l-container {
+        max-width: 112rem;
+        margin: 0 auto;
+        position: relative;
+        
     }
 }

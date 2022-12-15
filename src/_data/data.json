@@ -36,14 +36,26 @@
         "number":"1",
         "description1": "鼻や口から入った香りの信号は、視床下部などに直接作用し",
         "description2":"気分をリフレッシュさせてくれます。",
-        "img":[
-          {"url":"/assets/img/point/point1_img1.png" },
-          {"url":"/assets/img/point/point1_img2.png" },
-          {"url":"/assets/img/point/point1_img3.png" }
-        ],       
-        "item_title":"部屋干しも安心",
-        "item_description":"湿気の多い梅雨の季節の部屋干しにはハッカ油が大活躍！優しい自然な香りですっきりさわやか。",
-        "button":"ハッカ油コラムへ"
+        "item_content":[
+          {
+          "item_title":"部屋干しも安心",
+          "item_description":"湿気の多い梅雨の季節の部屋干しにはハッカ油が大活躍！優しい自然な香りですっきりさわやか。",
+          "button":"ハッカ油コラムへ",
+          "url":"/assets/img/point/point1_img1.png"
+          },
+          {
+            "item_title":"気分転換に",
+            "item_description":"集中力が低下してきたときはハッカ油でリフレッシュ。気分もすっきり眠気覚ましに最適です。",
+            "button":"ハッカ油コラムへ",
+            "url":"/assets/img/point/point1_img2.png"
+          },
+          {
+            "item_title":"外出のお供に",
+            "item_description":"遠足やピクニックで思いっきり遊んでも、ハッカ油のおしぼりをサッと取り出していつでも清潔。",
+            "button":"ハッカ油コラムへ",
+            "url":"/assets/img/point/point1_img3.png" 
+          }
+      ]      
       },
       {
         "title":"気持ちリフレッシュ",
@@ -51,14 +63,26 @@
         "number":"2",
         "description1": "メントールの刺激ですっきりクールダウン。",
         "description2":"ミントの香りで気分も爽快!",
-        "img":[
-          {"url":"/assets/img/point/point2_img1.png" },
-          {"url":"/assets/img/point/point2_img2.png" },
-          {"url":"/assets/img/point/point2_img3.png" }
-        ],
-        "item_title":"スッと冷却",
-        "item_description":"湿気の多い梅雨の季節の部屋干しにはハッカ油が大活躍！ 優しい自然な香りですっきりさわやか。",
-        "button":"ハッカ油コラムへ"
+        "item_content":[
+        {
+          "item_title":"スッと冷却",
+          "item_description":"湿気の多い梅雨の季節の部屋干しにはハッカ油が大活躍！ 優しい自然な香りですっきりさわやか。",
+          "button":"ハッカ油コラムへ",
+          "url":"/assets/img/point/point2_img1.png" 
+        },
+        {
+          "item_title":"花粉の季節に",
+          "item_description":"ハッカマスクでブルーな気分も吹き飛ばしてくれます。",
+          "button":"ハッカ油コラムへ",
+          "url":"/assets/img/point/point2_img2.png" 
+        },
+        {
+          "item_title":"足湯に",
+          "item_description":"ひんやり爽快。ハッカ油で寝苦しい夜もすっきり。さわやかな香りで気分もリフレッシュ。",
+          "button":"ハッカ油コラムへ",
+          "url":"/assets/img/point/point2_img3.png" 
+        }
+      ]
       },
       {
         "title":"ハウスキーピング",
@@ -66,14 +90,27 @@
         "number":"3",
         "description1": "ハッカ油に含まれるメントールは、お部屋のスッキリを演出。",
         "description2":"お家の害虫対策にもおすすめです。",
-        "img":[
-          {"url":"/assets/img/point/point3_img1.png" },
-          {"url":"/assets/img/point/point3_img2.png" },
-          {"url":"/assets/img/point/point3_img3.png" }
-        ],
-        "item_title":"スッと冷却",
-        "item_description":"湿気の多い梅雨の季節の部屋干しにはハッカ油が大活躍！ 優しい自然な香りですっきりさわやか。",
-        "button":"ハッカ油コラムへ"
+        "item_content":[
+          {        
+            "item_title":"嫌な害虫を撃退",
+            "item_description":"キッチンなどに現れる嫌な害虫はハッカ油がシャットアウト！ 清涼感あふれる香りでお部屋を守ります。",
+            "button":"ハッカ油コラムへ",
+            "url":"/assets/img/point/point3_img1.png" 
+          },
+          {        
+            "item_title":"窓ガラスに",
+            "item_description":"自然素材のハッカ油で手肌にも優しくハウスキーピング。手軽に作れるガラスクリーナーでピカピカに。",
+            "button":"ハッカ油コラムへ",
+            "url":"/assets/img/point/point3_img2.png" 
+          },
+          {        
+            "item_title":"シューピローに",
+            "item_description":"お部屋の悪臭にはハッカ油が迎え撃ち！ 嫌な匂いがこもりがちな靴にハッカ油のシューピローを。",
+            "button":"ハッカ油コラムへ",
+            "url":"/assets/img/point/point3_img3.png" 
+          }
+        ]
+
       }
     ]
 

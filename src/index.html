@@ -1,8 +1,8 @@
 <%- include('_layouts/layout', { title: 'Mentha Oil' }); -%>
-<!-- @meta -->
-<meta name="description" content="Main page" >
-<!-- @@meta -->
 
+<!-- @meta -->
+<meta name="description" content="Home page" >
+<!-- @@meta -->
 <!-- @content -->
 <!-- LEAF SECTION -->
 <div class="c-leaf">
@@ -18,25 +18,36 @@
   class="c-leaf__sideleaf"
   >
 </div>
+
 <main class="l-maincontent">
   <!-- MAINVISUAL SECTION -->
   <section id="c-mainvisual">
-    <div class="c-mainvisual__inner">
-      <div class="c-mainvisual__content">
-        <h1 class="c-mainvisual__title">
-          <img
-            src="/assets/img/mainvisual_title.png"
-            alt="健栄製薬の ハッカ油  "
-          >
-        </h1>
-        <p class="c-mainvisual__text">
-          ハッカ油は、毎日の暮らしを豊かにする
-          <strong class="c-mainvisual__text--strong">魔法のしずく</strong>
-        </p>
-        <a class="c-mainvisual__btn"
-          >ハッカ<span class="c-mainvisual__text--fixspacing1"> ？</span
-          ><span class="c-mainvisual__text--fixspacing2">ミント？</span>
-        </a>
+    <div class="l-container">
+      <div class="c-bubblesection">
+        <img src="/assets/img/bubble/top_left.png" alt="Bubble" class="c-bubble c-bubble__topleft">
+        <img src="/assets/img/bubble/top_middle.png" alt="Bubble" class="c-bubble c-bubble__topmiddle">
+        <img src="/assets/img/bubble/top_right.png" alt="Bubble" class="c-bubble c-bubble__topright">
+        <img src="/assets/img/bubble/bottom_left.png" alt="Bubble" class="c-bubble c-bubble__bottomleft">
+        <img src="/assets/img/bubble/bottom_middle.png" alt="Bubble" class="c-bubble c-bubble__bottommiddle">
+        <img src="/assets/img/bubble/bottom_right.png" alt="Bubble" class="c-bubble c-bubble__bottomright">
+      </div>
+      <div class="c-mainvisual__inner">
+        <div class="c-mainvisual__content">
+          <h1 class="c-mainvisual__title">
+            <img
+              src="/assets/img/mainvisual_title.png"
+              alt="健栄製薬の ハッカ油  "
+            >
+          </h1>
+          <p class="c-mainvisual__text">
+            ハッカ油は、毎日の暮らしを豊かにする
+            <strong class="c-mainvisual__text--strong">魔法のしずく</strong>
+          </p>
+          <a class="c-mainvisual__btn"
+            >ハッカ<span class="c-mainvisual__text--fixspacing1"> ？</span
+            ><span class="c-mainvisual__text--fixspacing2">ミント？</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -47,38 +58,40 @@
       毎日にハッカ油
     </h1>
     <div class="c-product__list">
-      <div class="c-product__item">
-        <img
-          src="/assets/img/product/bottle.png"
-          alt="ハッカ水"
-          class="c-product__img"
-        >
-        <div class="c-product__name">ハッカ水</div>
-      </div>
-      <div class="c-product__item">
-        <img
-          src="/assets/img/product/spray.png"
-          alt="ハッカの虫除けスプレー"
-          class="c-product__img"
-        >
-        <div class="c-product__name">ハッカの虫除けスプレー</div>
-      </div>
-      <div class="c-product__item">
-        <img
-          src="/assets/img/product/iron.png"
-          alt="ハッカのリネンウォーター"
-          class="c-product__img"
-        >
-        <div class="c-product__name">ハッカのリネンウォーター</div>
-      </div>
-      <div class="c-product__item">
+        <div class="c-product__item">
+          <img
+            src="/assets/img/product/bottle.png"
+            alt="ハッカ水"
+            class="c-product__img"
+          >
+          <div class="c-product__name">ハッカ水</div>
+        </div>
+        <div class="c-product__item">
+          <img
+            src="/assets/img/product/spray.png"
+            alt="ハッカの虫除けスプレー"
+            class="c-product__img"
+          >
+          <div class="c-product__name">ハッカの虫除けスプレー</div>
+        </div>
+        <div class="c-product__item">
+          <img
+            src="/assets/img/product/iron.png"
+            alt="ハッカのリネンウォーター"
+            class="c-product__img"
+          >
+          <div class="c-product__name">ハッカのリネンウォーター</div>
+        </div>
+        <div class="c-product__item">
         <img
           src="/assets/img/product/smaill_spray.png"
           alt="ハッカのエアフレッシュナー"
           class="c-product__img"
         >
         <div class="c-product__name">ハッカのエアフレッシュナー</div>
-      </div>
+    </div>
+    </div>  
+    <div class="c-product__list--bottom"> 
       <div class="c-product__item">
         <img
           src="/assets/img/product/light.png"
@@ -112,6 +125,7 @@
         <div class="c-product__name">ハッカの入浴剤</div>
       </div>
     </div>
+
   </section>
   <!-- POINT SECTION -->
   <section id="c-point">
@@ -132,19 +146,20 @@
         </div>
         <div class="c-point__bottom">
           <div class="c-point__list">
-            <% data.img && data.img.forEach(img => { %>
+            <% data.item_content && data.item_content.forEach(content => { %>
               <div class="c-point__item">
-                <img src="<%=img.url %>" alt="<%=data.item_title %>" class="c-item__img">
-                <div class="c-item__content">
-                  <span class="c-point__more">More</span>
-                  <div class="c-item__title"><%=data.item_title %></div>
-                  <div class="c-item__description"><%=data.item_description %></div>
-                  <a href="#" class="c-item__btn"><%=data.button%></a>
-                </div>
+                <img src="<%=content.url %>" alt="<%=content.item_title %>" class="c-item__img">
+                <i class="c-point__iconmore"></i> 
+                    <div class="c-item__content">
+                        <h3 class="c-item__title"><%=content.item_title %></h3>
+                        <p class="c-item__description"><%=content.item_description %></p>
+                        <a href="#" class="c-item__btn"><%=content.button%></a>
+                    </div> 
               </div>
               <% }) %>  
           </div>
         </div>
+        
       <% }) %>
     <% } %>
   </div>
@@ -153,16 +168,15 @@
   <section id="c-partner"> 
     <div class="c-partner__content">
     <% if (typeof partnerdata != 'undefined')  { %>
-      <div class="c-partner__title"><%=partnerdata.title %></div>
+      <h2 class="c-partner__title"><%=partnerdata.title %></h2>
       <div class="c-partner__list">
         <% partnerdata.partners.forEach(partner => { %>
-          <a class="c-partner__item">
-              <img src="<%=partner.url %>" alt="" class="c-partner__img">
-              <span class="c-partner__rightangle"></span>
+          <a href="#" class="c-partner__item">
+              <img src="<%=partner.url %>" alt="<%=partnerdata.title %>" class="c-partner__img">
           </a>
         <% })%>
       </div>
-      <h2 class="c-partner__name"><%=partnerdata.name %></h2>
+      <p class="c-partner__name"><%=partnerdata.name %></p>
     <% } %>
     </div>
   </section>
@@ -206,6 +220,7 @@
                 </div>
               </div>
               <div class="c-item__description"><%=feature.description%></div>
+              <img src="/assets/img/feature/arrow.png" alt="<%=feature.item_main_title%>" class="c-feature__arrow">
             </div>
           <% }) %>  
           </div>
@@ -214,6 +229,5 @@
     </div>
 
   </section>
-
 </main>
 <!-- @@content -->
