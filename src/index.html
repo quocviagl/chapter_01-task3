@@ -19,25 +19,36 @@
   >
 </div>
 
-<main class="l-maincontent">
+<main class="p-top">
   <!-- MAINVISUAL SECTION -->
   <section id="c-mainvisual">
+    <div class="c-bubblesection">
+      <img src="/assets/img/bubble/top_left.png" alt="Bubble" class="c-bubble c-bubble__topleft">
+      <img src="/assets/img/bubble/top_middle.png" alt="Bubble" class="c-bubble c-bubble__topmiddle">
+      <img src="/assets/img/bubble/top_right.png" alt="Bubble" class="c-bubble c-bubble__topright">
+      <img src="/assets/img/bubble/bottom_left.png" alt="Bubble" class="c-bubble c-bubble__bottomleft">
+      <img src="/assets/img/bubble/bottom_middle.png" alt="Bubble" class="c-bubble c-bubble__bottommiddle">
+      <img src="/assets/img/bubble/bottom_right.png" alt="Bubble" class="c-bubble c-bubble__bottomright">
+    </div>
     <div class="l-container">
-      <div class="c-bubblesection">
-        <img src="/assets/img/bubble/top_left.png" alt="Bubble" class="c-bubble c-bubble__topleft">
-        <img src="/assets/img/bubble/top_middle.png" alt="Bubble" class="c-bubble c-bubble__topmiddle">
-        <img src="/assets/img/bubble/top_right.png" alt="Bubble" class="c-bubble c-bubble__topright">
-        <img src="/assets/img/bubble/bottom_left.png" alt="Bubble" class="c-bubble c-bubble__bottomleft">
-        <img src="/assets/img/bubble/bottom_middle.png" alt="Bubble" class="c-bubble c-bubble__bottommiddle">
-        <img src="/assets/img/bubble/bottom_right.png" alt="Bubble" class="c-bubble c-bubble__bottomright">
-      </div>
+
       <div class="c-mainvisual__inner">
-        <div class="c-mainvisual__content">
-          <h1 class="c-mainvisual__title">
-            <img
-              src="/assets/img/mainvisual_title.png"
+        <picture>
+              <source media="(min-width:768px)" srcset="/assets/img/bg_main.png">
+              <img
+              src="./assets/img/sp/bg-main-sp.png"
               alt="健栄製薬の ハッカ油  "
             >
+        </picture>
+        <div class="c-mainvisual__content">
+          <h1 class="c-mainvisual__title">
+            <picture>
+              <source media="(min-width:768px)" srcset="/assets/img/mainvisual_title.png">
+              <img
+              src="./assets/img/sp/title.png"
+              alt="健栄製薬の ハッカ油  "
+            >
+            </picture>
           </h1>
           <p class="c-mainvisual__text">
             ハッカ油は、毎日の暮らしを豊かにする
@@ -138,18 +149,20 @@
             <div class="c-point__text"><%= data.text %></div>
           </div>
           <div class="c-point__top--right">
-          <h2 class="c-point__title"><%= data.title %></h2>
-          <div class="c-point__description"><%= data.description1 %> 
-            <p class="c-point__description--fixspacing"><%= data.description2%></p>
-          </div>
+            <h2 class="c-point__title"><%= data.title %></h2>
+            <div class="c-point__description"><%= data.description1 %> 
+              <p class="c-point__description--fixspacing"><%= data.description2%></p>
+            </div>
+         
           </div>
         </div>
+        <p class="c-item__spdescription"><%= data.spdescription %></p>
         <div class="c-point__bottom">
           <div class="c-point__list">
             <% data.item_content && data.item_content.forEach(content => { %>
               <div class="c-point__item">
                 <img src="<%=content.url %>" alt="<%=content.item_title %>" class="c-item__img">
-                <i class="c-point__iconmore"></i> 
+                <img src="./assets/img/btn_more.png" alt="More Button" class="c-point__iconmore"> 
                     <div class="c-item__content">
                         <h3 class="c-item__title"><%=content.item_title %></h3>
                         <p class="c-item__description"><%=content.item_description %></p>
@@ -168,7 +181,7 @@
   <section id="c-partner"> 
     <div class="c-partner__content">
     <% if (typeof partnerdata != 'undefined')  { %>
-      <h2 class="c-partner__title"><%=partnerdata.title %></h2>
+      <h2 class="c-partner__title"><%=partnerdata.title1 %> <span class="c-partner__title--marginleft"><%=partnerdata.title2 %></span> </h2>
       <div class="c-partner__list">
         <% partnerdata.partners.forEach(partner => { %>
           <a href="#" class="c-partner__item">
@@ -189,8 +202,8 @@
           <% QAdata.data && QAdata.data.forEach(data => { %>
             <dl class="c-qa__questionitem">
               <dt class="c-qa__question">
-              <span class="c-qa__qmark">Q</span>
-              <%=data.question %>
+              <img src="./assets/img/sp/sp_qmark.png" alt="Q&A" class="c-qa__qmark">
+              <p class="c-qa__mainquestion"><%=data.question %></p>
               </dt>
               <dd class="c-qa__answer"><%=data.answer%></dd>
           </dl>

@@ -36,6 +36,7 @@
         "number":"1",
         "description1": "鼻や口から入った香りの信号は、視床下部などに直接作用し",
         "description2":"気分をリフレッシュさせてくれます。",
+        "spdescription": "鼻や口から入った香りの信号は、視床下部などに直接作用し気分をリフレッシュさせてくれます。",
         "item_content":[
           {
           "item_title":"部屋干しも安心",
@@ -63,6 +64,7 @@
         "number":"2",
         "description1": "メントールの刺激ですっきりクールダウン。",
         "description2":"ミントの香りで気分も爽快!",
+        "spdescription": "メントールの刺激ですっきりクールダウン。ミントの香りで気分も爽快！",
         "item_content":[
         {
           "item_title":"スッと冷却",
@@ -90,6 +92,7 @@
         "number":"3",
         "description1": "ハッカ油に含まれるメントールは、お部屋のスッキリを演出。",
         "description2":"お家の害虫対策にもおすすめです。",
+        "spdescription": "ハッカ油に含まれるメントールは、お部屋のスッキリを演出。お家の害虫対策にもおすすめです。",
         "item_content":[
           {        
             "item_title":"嫌な害虫を撃退",
@@ -116,14 +119,15 @@
 
   },
   "partnerdata":{
-    "title": "お買い求めは全国のドラッグストア、またはこちらから",
+    "title1": "お買い求めは全国のドラッグストア",
+    "title2":"、またはこちらから",
     "partners":[
       {"url":"/assets/img/partner/amazon.png"},
       {"url":"/assets/img/partner/kenko.png"},
       {"url":"/assets/img/partner/lohaco.png"},
       {"url":"/assets/img/partner/partner4.png"}
     ],
-    "name":"Amazon、Amazon.co.jp、及びAmazon.co.jpロゴはAmazon.com, Inc.又はその関連会社の商標です。"
+    "name":"Amazon、Amazon.co.jp、及びAmazon.co.-jpロゴはAmazon.com, Inc.又はその関連会社 の商標です。"
   },
   "QAdata":{
     "data":[

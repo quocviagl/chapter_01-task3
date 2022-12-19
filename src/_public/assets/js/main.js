@@ -1,6 +1,7 @@
 $(".c-point__iconmore").click(function(){
             $(this).parent().parent().parent().find(".c-item__content").css("display", "none");
-            $(this).next().css("display","block");      
+        
+        $(this).next().css({"display":"block","pointer-events": "auto"});      
            
     });
 // ANIMATION

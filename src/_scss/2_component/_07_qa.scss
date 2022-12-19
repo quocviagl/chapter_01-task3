@@ -18,12 +18,13 @@
     }
 
     .c-questionlist {
-        padding: 48px 65px 63px 88px;
+        padding: 39px 65px 63px 70px;
     }
 
     .c-qa__questionitem {
+        margin-top: 1px;
         &:not(:last-child) {
-            padding-bottom: 52px;
+            padding-bottom: 47px;
         }
     }
 
@@ -33,17 +34,19 @@
         font-weight: 400;
         letter-spacing: 1.3px;
         margin: -1px 0 0 -2p;
-
+        display: flex;
+        align-items: center;
     }
 
     .c-qa__answer {
         font-size: 1.4rem;
         font-weight: 400;
         color: #333;
-        padding-top: 16px;
+        letter-spacing: 1.43px;   
+        padding-top: 5px;
         letter-spacing: 1.43px;
-        margin-left: -19px;
-        margin-right: 10px;
+        margin-left: -1px;
+
     }
 
     .c-qa__qmark {
@@ -52,7 +55,7 @@
         font-size: 2.6rem;
         font-weight: 400;
         z-index: 100;
-        margin-right: 30px;
+        margin-right: 15px;
 
         &::after {
             position: absolute;
@@ -69,5 +72,29 @@
             z-index: -1;
         }
     }
+    @include sp {
+        .c-qa__title {
+            font-size: 2rem;
+            padding-top: 34px;
+            letter-spacing: 2px;
+        }
 
+        .c-questionlist {
+            padding: 0 24px;
+        }
+
+        .c-qa__question {
+            font-size: 1.3rem;
+            text-align: left;
+        }
+
+        .c-qa__qmark {
+            font-size: 1.8rem;
+
+            &::after {
+                width: 44px;
+                height: 55px;
+            }
+        }
+    }
 }

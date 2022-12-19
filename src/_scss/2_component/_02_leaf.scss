@@ -6,16 +6,25 @@
     top: 0;
     z-index: 99;
     transition: all 1s;
+    @include sp {
+        width: 114px;
+        left: 25.5%;
+    }
 
 }
 
 .c-leaf__sideleaf {
     position: fixed;
     right: 0;
-    top: 50.4%;
+    top: 54%;
     z-index: 99;
     transition: all 1s;
-
+    @include sp {
+        right: 6px;
+        top: 59.3%;
+        width: 80px;
+        transform: rotateZ(-9deg);
+    }
 }
 
 .c-leaf__animationy {
