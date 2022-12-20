@@ -1,67 +1,146 @@
 #c-feature {
     width: 100%;
     padding: 44px 20px 0;
+    @include sp {
+        padding: 12px 14px 0;
+    }
 }
 
 .c-feature__content {
     max-width: 112rem;
     color: #333;
     margin: 0 auto;
+    @include sp {
+        max-width: 345px;
+    }
 
-    .c-feature__title {
-        font-size: 4.5rem;
-        font-weight: 400;
+    .c-feature__top {
         text-align: center;
-        background: url("/assets/img/feature_banner.jpg") no-repeat;
-        background-position: bottom;
-        background-size: cover;
-        line-height: 1.1;
-        padding: 65px 0 85px;
-        letter-spacing: 4.6px;
-        border-radius: 50px;
-        max-width: 103rem;
-        margin: 0 auto;
+        position: relative;
+
+        .c-feature__banner {
+            border-radius: 50px;
+            width: 250px;
+            height: 250px;
+        }
+
+        .c-feature__title {
+            position: absolute;
+            font-size: 4.5rem;
+            font-weight: 400;
+            text-align: center;
+            line-height: 1.1;
+            padding: 65px 0 85px;
+            letter-spacing: 4.6px;
+            border-radius: 50px;
+            max-width: 103rem;
+            margin: 0 auto;
+            top: 0;
+            left: 28%;
+        }
+            
+        .c-feature__title--small {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-left: -16px;
+            letter-spacing: 0;
+        }
+        @include sp {
+            .c-feature__title {
+                font-size: 2rem;
+                left: 0;
+                right: 0;
+                letter-spacing: 1.7px;
+                line-height: 1.5;
+                padding-top: 40px;
+            }
+
+            .c-feature__title--small {
+                font-size: 1.4rem;
+                margin-left: -8px;
+            }
+
+            .c-feature__banner {
+                border-radius: 25px;
+            }
+        }
     }
-        
-    .c-feature__title--small {
-        font-size: 2rem;
-        font-weight: 400;
-        margin-left: -16px;
-        letter-spacing: 0;
-    }
+
+    
 
     .c-feature__list {
         max-width: 1000px;
         margin: 0 auto;
         padding: 50px 0 0 70px;
+        @include sp {
+            padding-top: 75px;
+            padding-left: 0;
+        }
             
     }
 
     .c-feature__item {
         border-bottom: 1px solid #176b6a;
-        width: 92.5%;
+        width: 96.2%;
         position: relative;
+        @include sp {
+            width: 100%;
+            border: none;
+        }
 
         &:not(:last-child) {
             margin-bottom: 33px;
+            @include sp {
+                margin-bottom: 35px;
+
+            }
+
+
         }
-    }
+
+        &:not(:first-child) {
+            @include sp {
+                .c-item__img {
+                    width: 62.5%;
+                    transform: translate(2px, -5px);
+                }
+
+                .c-item__title {
+                    margin-top: -10px;
+                    margin-bottom: 4px;
+                    margin-left: -39px;
+                }
+
+                .c-item__top {
+                    padding-top: 10px;
+                }
+            }
+        }}
+            
+  
+    
 
     .c-item__top {
         display: flex;
         column-gap: 15px;
         padding-bottom: 21px;
-            
+        @include sp {
+            gap: 0;
+            justify-content: space-between;
+            padding-bottom: 8px;
+        }
     }
 
     .c-item__top--left {
         position: relative;
-        overflow: hidden;
+
     }
 
     .c-item__top--right {
         padding-top: 22px;
-
+        @include sp {
+            padding-top: 0;
+        }
     }
 
     .c-item__title {
@@ -70,6 +149,13 @@
         color: #333;
         letter-spacing: 2.5px;
         line-height: 1.4;
+        @include sp {
+            font-size: 1.5rem;
+            margin-left: -16px;
+            margin-top: -5px;
+            line-height: 1.75;
+            letter-spacing: 1.45px;
+        }
     }
 
     .c-item__title--small {
@@ -78,11 +164,19 @@
         font-weight: 400;
         color: #333;
         letter-spacing: 1.5px;
-
+        @include sp {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
     }
 
     .c-item__img {
         border-radius: 10px;
+        @include sp {
+            max-width: 275px;
+            max-height: 100px;
+            width: 76.5%;     
+        }
     }
 
     .c-item__number {
@@ -93,6 +187,9 @@
         font-weight: 400;
         color: #176b6a;
         letter-spacing: 4px;
+        @include sp {
+            display: none;;
+        }
     }
 
     .c-item__description {
@@ -103,10 +200,70 @@
         letter-spacing: 1.4px;
         position: relative;
         padding-bottom: 32px;
+        animation: expand 1s;
+
+        .c-item__link {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #176b6a;
+            display: none;
+            text-align: right;
+            margin: 10px 1px 0 0;
+            text-decoration: underline;
+            letter-spacing: 0;
+            transition: opacity 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        @include sp {
+            display: none;
+            font-size: 1.3rem;
+            line-height: 1.7;
+            padding-bottom: 15px;
+
+            .c-item__link {
+                display: block;
+            }
+        }
+
+    }
+
+    .c-item__expand {
+        border-radius: 7.5px;
+        background-color: #176b6a;
+        padding: 3px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        .c-item__expandarrow {
+            width: 35px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            left: 50%;
+            top: 50%;
+            transition: all 0.5s;
+        }
+
+        .c-item__expandarrow--active {
+            transform: rotate(-180deg);
+        }
     }
 
     .c-feature__arrow {
         position: absolute;
         right: 0;
-        top: 93px;      }
+        top: 93px;
+        @include sp {
+            display: none;;
+        }
+    }
 }

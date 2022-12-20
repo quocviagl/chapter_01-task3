@@ -23,8 +23,12 @@
 
     .c-qa__questionitem {
         margin-top: 1px;
+
         &:not(:last-child) {
             padding-bottom: 47px;
+            @include sp {
+                padding-bottom: 23px;
+            }
         }
     }
 
@@ -42,7 +46,7 @@
         font-size: 1.4rem;
         font-weight: 400;
         color: #333;
-        letter-spacing: 1.43px;   
+        letter-spacing: 1.43px;
         padding-top: 5px;
         letter-spacing: 1.43px;
         margin-left: -1px;
@@ -77,10 +81,17 @@
             font-size: 2rem;
             padding-top: 34px;
             letter-spacing: 2px;
+            padding-bottom: 20px;
         }
 
         .c-questionlist {
-            padding: 0 24px;
+            padding: 0 15px;
+        }
+
+        .c-qa__questionitem {
+            &:not(:nth-child(-n+2)) {
+                display: none;
+            }
         }
 
         .c-qa__question {
@@ -90,11 +101,20 @@
 
         .c-qa__qmark {
             font-size: 1.8rem;
+            width: 40px;
+            height: 38px;
+            margin-right: 10px;
 
             &::after {
                 width: 44px;
                 height: 55px;
             }
+        }
+
+        .c-qa__answer {
+            padding-top: 8px;
+            letter-spacing: 0.35px;
+            line-height: 1.6;
         }
     }
 }

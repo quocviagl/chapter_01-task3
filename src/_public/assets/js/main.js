@@ -20,3 +20,13 @@ $(window).scroll(function(){
         }
 
       });
+//EXPAND CONTENT
+$(".c-item__expand").click(function(){
+        var arrow = $(this).find('.c-item__expandarrow');
+        var content = $(this).parent().find('.c-item__description');
+
+        arrow.toggleClass("c-item__expandarrow--active")
+        content.slideToggle("slow");
+})
+
+

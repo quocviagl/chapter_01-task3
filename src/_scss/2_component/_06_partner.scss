@@ -19,6 +19,10 @@
     padding-left: -12px;
 }
 
+.c-partner__title--marginleft {
+    margin-left: -12px;
+}
+
 .c-partner__list {
     display: flex;
     column-gap: 17px;
@@ -56,10 +60,13 @@
 @include sp {
     .c-partner__title {
         font-size: 1.8rem;
-        padding-top: 34px;
-        padding-bottom: 21px;
-        letter-spacing: 1.9px;
+        padding: 33px 14px 21px;
+        letter-spacing: 1.7px;
         line-height: 1.7;
+    }
+
+    .c-partner__title--marginleft {
+        margin-left: 0;
     }
 
     .c-partner__list {
@@ -86,7 +93,7 @@
         font-size: 1.3rem;
         font-size: 1.3rem;
         text-align: center;
-        padding: 22px 9px 55px;
+        padding: 22px 11px 55px;
         line-height: 1.65;
         
     }
