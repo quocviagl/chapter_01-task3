@@ -17,6 +17,9 @@
     padding-top: 104px;
     padding-bottom: 42px;
     padding-left: -12px;
+    @include tab {
+        font-size: 2.5rem;
+    }
 }
 
 .c-partner__title--marginleft {

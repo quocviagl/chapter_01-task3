@@ -2,7 +2,6 @@
     width: 100%;
     background-color: #f5f4ed;
     margin-top: -22px;
-    // padding-top: 78px;
     padding: 78px 15px 0;
     @include sp {
         padding-top: 0;
@@ -180,10 +179,6 @@
         gap: 20px;
     }
 
-    .c-item__img {
-        overflow: clip;
-        overflow-clip-margin: content-box;
-    }
 
 
 
@@ -274,7 +269,7 @@
     .c-item__btn {
         display: block;
         margin-top: 30px;
-        background: url("/assets/img/button_bg.png");
+        background: url("./assets/img/button_bg.png");
         text-align: center;
         padding: 8px 26px;
         font-size: 1.6rem;
@@ -312,15 +307,6 @@
             margin-top: 20px;
             border-radius: 15px;
             max-width: 315px;
-
-            &:nth-child(2) {
-                display: none;
-
-            }
-
-            &:nth-child(3) {
-                display: none;
-            }
         }
 
         .c-item__content {
@@ -352,6 +338,13 @@
             padding: 4px 6px;
             bottom: 19%;
             left: 26.5%;
+        }
+    }
+    @include tab {
+        .c-point__list {
+            flex-direction: column;
+            padding: 0;
+            align-items: center;
         }
     }
 }

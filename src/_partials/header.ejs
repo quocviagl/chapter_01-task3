@@ -1,10 +1,15 @@
 <header class="c-header">
+  
   <nav class="c-header__nav">
+      <img src="./assets/img/sp/menu-icon.png" alt="Menu Icon" class="c-header__icon">
+      <img src="./assets/img/sp/menu-icon-white.png" alt="Menu Icon Overlay" class="c-header__icon c-header__icon--close">
+      <img src="./assets/img/sp/leaf/topleaf.png" alt="Menu Leaf" class="c-header__leaf c-header__topleaf">
+      <img src="./assets/img/sp/leaf/rightleaf.png" alt="Menu Leaf" class="c-header__leaf c-header__sideleaf">
       <% if (typeof linklists != 'undefined') { %>
         <ul class="c-nav__menu">
         <% linklists.main && linklists.main.forEach(link => { %>
             <li class="c-nav__item">
-              <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+              <a class="c-nav__link"<% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
             </li>
             <% }) %>
         </ul>

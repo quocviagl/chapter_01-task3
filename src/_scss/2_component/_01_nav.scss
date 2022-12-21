@@ -4,90 +4,81 @@
     top: 67px;
     z-index: 9999;
     position: fixed;
+    @include sp {
+        display: none;
+        background: url("./assets/img/sp/background.jpg") repeat;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding-top: 77px;
+        z-index: 10000;
+    }
+    @include tab {
+        display: none;
+        background: url("./assets/img/sp/background.jpg") repeat;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding-top: 77px;
+        z-index: 10000;
+    }
 
     .c-nav__item {
         height: 40px;
         font-size: 1.6rem;
         font-weight: 400;
-        background-image: url("/assets/img/bg_menuitem.png");
+        background-image: url("./assets/img/bg_menuitem.png");
         padding: 9px 33px 0 20px;
         letter-spacing: 2px;
         color: #fff;
         transition: opacity 0.3s;
-   
+
+        .c-nav__link {
+            display: block;
+        }
 
         &:hover {
             opacity: 0.7;
             cursor: pointer;
         }
+
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+        
+        &:nth-child(2) {
+            margin-bottom: 16px;
+            letter-spacing: 1.6px;
+        }
+        
+        &:nth-child(4) {
+            margin-bottom: 16px;
+            padding-top: 7px;
+        }
+        @include sp {
+            height: 80px;
+            background-image: none;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+            line-height: 4;
+            font-weight: normal;
+            letter-spacing: 1.8px;
+            border-bottom: 1px solid #3a5656;
+            margin-bottom: 0;
+            padding: 0 21px 0 20px;
+        }
     }
     
-    .c-nav__item:not(:last-child) {
-        margin-bottom: 14px;
-    }
-    
-    .c-nav__item:nth-child(2) {
-        margin-bottom: 16px;
-        letter-spacing: 1.6px;
-    }
-    
-    .c-nav__item:nth-child(4) {
-        margin-bottom: 16px;
-        padding-top: 7px;
-    }
+
 
     .is-active {
         opacity: 0.7;
     }
-    @include sp {
-        display: none;
-    }
-}
 
-.c-header__spnav {
-    position: fixed;
-
-    .c-spnav__menu {
-        text-align: center;
-        
-    }
-
-    .c-spnav__item {
-        font-size: 2rem;
-        font-weight: 400;
-        color: #fff;
-        font-size: 2rem;
-        line-height: 4;
-        letter-spacing: 1.8px;
-        border-bottom: 1px solid #3a5656;
-    }
-
-    .c-spnav__leaftop {
-        width: 160px;
-        position: absolute;
-        top: -8.5%;
-        left: 0;
-    }
-
-    .c-spnav__leafright {
-        width: 180px;
-        position: absolute;
-        top: 40.5%;
-        right: 0;
-    }
-
-    .c-header__menuiconwhite {
-        width: 45px;
-        
-    }
 
 }
 
-.is-show {
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    background: url("assets/img/sp/background.jpg") repeat;
-    z-index: 10000;
-}

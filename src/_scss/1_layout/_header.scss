@@ -4,6 +4,48 @@
     top: 67px;
     z-index: 99;
 
+
 }
 
+.c-header__icon {
+    display: none;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    z-index: 99;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    @include sp {
+        display: block;
+    }
+}
 
+.c-header__icon--close {
+    display: none;
+    z-index: 100001;
+}
+
+.c-header__leaf {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    max-width: 160px;
+}
+
+.c-header__topleaf {
+    top: 0;
+    left: 0;
+}
+
+.c-header__sideleaf {
+    max-width: 175px;
+    top: 49.5%;
+    right: 0;
+}
+
+.c-header__nav {
+    .is-active {
+        display: block;
+    }
+}

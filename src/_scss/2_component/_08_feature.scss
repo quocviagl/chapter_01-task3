@@ -20,8 +20,6 @@
 
         .c-feature__banner {
             border-radius: 50px;
-            width: 250px;
-            height: 250px;
         }
 
         .c-feature__title {
@@ -62,6 +60,17 @@
 
             .c-feature__banner {
                 border-radius: 25px;
+                width: 250px;
+                height: 250px;
+            }
+        }
+        @include tab {
+            .c-feature__title {
+                font-size: 4rem;
+                top: 10%;
+                left: 0;
+                right: 0;
+                padding-top: 0;
             }
         }
     }
@@ -71,10 +80,11 @@
     .c-feature__list {
         max-width: 1000px;
         margin: 0 auto;
-        padding: 50px 0 0 70px;
+        padding: 50px 36px 0 70px;
         @include sp {
             padding-top: 75px;
             padding-left: 0;
+            padding-right: 0;
         }
             
     }
@@ -124,6 +134,7 @@
         display: flex;
         column-gap: 15px;
         padding-bottom: 21px;
+        align-items: center;
         @include sp {
             gap: 0;
             justify-content: space-between;
@@ -137,7 +148,6 @@
     }
 
     .c-item__top--right {
-        padding-top: 22px;
         @include sp {
             padding-top: 0;
         }
@@ -155,6 +165,9 @@
             margin-top: -5px;
             line-height: 1.75;
             letter-spacing: 1.45px;
+        }
+        @include tab {
+            font-size: 2rem;
         }
     }
 
@@ -177,6 +190,9 @@
             max-height: 100px;
             width: 76.5%;     
         }
+        @include tab {
+            min-width: 202px;
+        }
     }
 
     .c-item__number {
@@ -189,6 +205,11 @@
         letter-spacing: 4px;
         @include sp {
             display: none;;
+        }
+        @include tab {
+            left: 22.3%;
+            bottom: 2%;
+            font-size: 4rem;
         }
     }
 
@@ -238,6 +259,7 @@
         padding: 3px;
         cursor: pointer;
         transition: opacity 0.3s;
+        display: none;
 
         &:hover {
             opacity: 0.7;
@@ -256,6 +278,9 @@
         .c-item__expandarrow--active {
             transform: rotate(-180deg);
         }
+        @include sp {
+            display: block;
+        }
     }
 
     .c-feature__arrow {
@@ -264,6 +289,9 @@
         top: 93px;
         @include sp {
             display: none;;
+        }
+        @include tab {
+            right: -18px;
         }
     }
 }
